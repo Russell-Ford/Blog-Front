@@ -1,0 +1,14 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Russell Ford</span>
+    <span  fxFlex="1 1 100%" style="text-align: center" fxHide fxShow.gt-sm>
+        <button mat-button routerLink="/">Blog</button>
+        <button mat-button routerLink="/fit">Exercise</button>
+        <button mat-button>Bonsai</button>
+    </span>
+    <span fxFlex="1 1 auto" fxShow fxHide.gt-sm></span>
+    <button fxShow fxHide.gt-sm mat-icon-button (click)="toggleMenu.emit()"><mat-icon>menu</mat-icon></button>
+    <span style="visibility: hidden" fxHide fxShow.gt-sm>Russell Ford</span>
+  </mat-toolbar-row>
+</mat-toolbar>
